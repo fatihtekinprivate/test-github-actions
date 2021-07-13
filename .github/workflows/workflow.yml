@@ -10,6 +10,7 @@ jobs:
       - name: debug
         run: |
           echo "${{ toJson(github.event.pull_request.labels.*.name) }}"
+          echo 0
 
   build:
     name: build
