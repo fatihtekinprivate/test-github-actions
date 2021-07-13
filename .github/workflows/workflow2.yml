@@ -1,0 +1,13 @@
+name: test-github-actions
+on:
+  [pull_request_target]
+
+jobs:
+  code-owner:
+    name: code-owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: code-owner
+        run: |
+          echo "code owner should not run"
+
