@@ -1,6 +1,6 @@
-name: test-github-actions
+name: test-github-actions-codeowner
 on:
-  [pull_request_target]
+  [pull_request]
 
 jobs:
   code-owner:
