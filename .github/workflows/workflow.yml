@@ -3,8 +3,8 @@ on:
   [pull_request_target]
 
 jobs:
-  debug:
-    name: debug
+  debugd:
+    name: debugd
     runs-on: ubuntu-latest
     steps:
       - name: debug
