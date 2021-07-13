@@ -14,8 +14,6 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-latest
-    environment:
-      name: test-actions
     steps:
       - name: Setup Go 1.16
         uses: actions/setup-go@v2
@@ -24,5 +22,3 @@ jobs:
 
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
