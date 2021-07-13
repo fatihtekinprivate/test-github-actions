@@ -1,0 +1,13 @@
+name: test-github-actions
+on:
+  [push, pull_request]
+
+jobs:
+  debug-test:
+    name: debug-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: debug-test
+        run: |
+          echo "this should not run"
+
