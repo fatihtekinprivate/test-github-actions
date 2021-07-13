@@ -3,16 +3,16 @@ on:
   [pull_request_target]
 
 jobs:
-  debug:
-    name: debug
+  dddebug:
+    name: dddebug
     runs-on: ubuntu-latest
     steps:
-      - name: debug
+      - name: dddebug
         run: |
           echo "${{ toJson(github.event.pull_request.labels.*.name) }}"
 
-  build:
-    name: build
+  bbbuild:
+    name: bbbuild
     runs-on: ubuntu-latest
     steps:
       - name: Setup Go 1.16
